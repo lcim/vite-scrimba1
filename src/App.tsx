@@ -33,7 +33,7 @@ export default function App() {
  * of the die to determine which one to flip `isHeld` on,
  * but you can do whichever way makes the most sense to you.
  */
-    function holdDice(id) {
+    function holdDice(id: any) {
         setDice(oldDice => oldDice.map(die => {
             return die.id === id ? 
                 {...die, isHeld: !die.isHeld} :
